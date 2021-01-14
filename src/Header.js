@@ -7,7 +7,7 @@ export default class Header extends Component {
         <div className="Header">
           Vincent Servio
           <br />
-          <div style={{fontSize: "3vw", color: "white", border: "0px"}}>
+          <div style={{fontSize: "2vw", color: "white", border: "0px"}}>
             Full Stack Engineer
           </div>
           <br />
