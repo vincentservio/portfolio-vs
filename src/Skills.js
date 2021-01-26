@@ -11,7 +11,7 @@ export default class Skills extends Component {
           program1={"JavaScript"}
           program2={"React/Redux"}
           program3={"HTML5/CSS"}
-          program4={"Command Line Interface"}
+          program4={"CLI"}
         />
         <Cards
           icon={"https://img.icons8.com/ios-filled/50/000000/server.png"}
