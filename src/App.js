@@ -26,8 +26,9 @@ function App() {
         PROJECT PORTFOLIO
       </div>
       <Portfolio />
+
       <div style={{color: "white", paddingTop: "40px"}}>
-        Hover over cards to open project and view description!
+        <br /> Hover over cards to open project and view description!
       </div>
 
       <Footer />
