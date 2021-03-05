@@ -445,3 +445,18 @@ button {
   border-radius: 50%;
   size: 1px;
 }
+
+a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+}
+a:hover {
+  color: rgb(201, 176, 224);
+  text-decoration: none;
+  /* margin-left: 30px; */
+}
+.Nav {
+  color: #fff;
+  font-size: 30px;
+}
