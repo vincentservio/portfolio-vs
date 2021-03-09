@@ -10,7 +10,7 @@ export default function Project(props) {
         <div className={"ms"}>
           <h1>{props.title}</h1>
           <img src={props.gif} className={"preview"} alt="img" />
-          <div>{props.description}</div>
+          <div style={{color: "black"}}>{props.description}</div>
           <button onClick={() => setIsOpen(false)}>Close</button>
         </div>
       </>
