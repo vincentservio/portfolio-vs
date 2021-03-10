@@ -13,7 +13,7 @@ export default function ProjectsTab() {
       <br />
       <h1>TrackBackers</h1>
       <img src={"https://imgur.com/9uPOPZs.gif"} className={"two"} alt="img" />
-      <div className="one">
+      <div className="one ">
         Built using Ruby on Rails and Sinatra, I built this program to Allow
         users to add and organize shoes in their personal collection, like a
         virtual sneaker closet.

@@ -457,8 +457,10 @@ a:hover {
   /* margin-left: 30px; */
 }
 .Nav {
+  text-align: center;
+
   color: #fff;
-  font-size: 30px;
+  font-size: 3vw;
 }
 
 .container {
@@ -471,17 +473,38 @@ a:hover {
 
 .one {
   width: 25%;
-  height: 200px;
+  /* height: 200px; */
   background: rgba(0, 0, 0, 0.39);
   float: left;
   margin-left: 20%;
   color: #c7caee;
   padding-bottom: 5vw;
+  size: 1vw;
+  padding-right: 54px;
 }
 
 .two {
-  margin-left: -15%;
-  height: 200px;
+  margin-left: -10%;
+  height: 20vw;
   background: black;
   padding-bottom: 5vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .one {
+    font-size: 7px;
+    text-align: center;
+    float: none;
+    padding-right: 54px;
+  }
+  .two {
+    height: 35vw;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  b {
+    font-size: 510px;
+  }
 }
