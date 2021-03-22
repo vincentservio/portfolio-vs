@@ -3,6 +3,7 @@ import React from "react";
 function AboutTab() {
   return (
     <div className="App">
+      <h1>About Vincent Servio</h1>
       As a driven, hardworking young man starting my coding career, I know that
       I can positively impact Nike's goals in the Software Engineering role. I
       graduated from Flatiron School with a certificate in Web development and
