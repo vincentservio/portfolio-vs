@@ -6,9 +6,9 @@ import {Languages} from "./Skills/Languages";
 import Skills from "./Skills";
 import Portfolio from "./Portfolio/Portfolio.js";
 import {Footer} from "./Footer/Footer";
-import {Nav} from "./Nav";
+import Nav from "./Nav";
 
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+// import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Project from "./Skills/project";
 import ProjectsTab from "./Tabs/ProjectsTab";
 import HomeTab from "./Tabs/HomeTab";
@@ -17,24 +17,26 @@ import ContactTab from "./Tabs/ContactTab";
 
 function App() {
   return (
-    <Router>
-      {" "}
+    // <Router>
+    <>
+      <Nav />
       <div className="App">
-        <Nav />
-        <Switch>
+        <Header />
+
+        {/* <Switch>
           <Route path="/Projects" exact component={ProjectsTab} />
           <Route path="/About" exact component={AboutTab} />
           <Route path="/Contact" exact component={ContactTab} />
           <Route path="/" exact component={HomeTab} />
-        </Switch>
-        {/* 
+        </Switch> */}
+
         <br />
         <div className="titles">
           Web Developer
           <br />
           With Hands On Experience
-        </div> */}
-        {/* <Languages />
+        </div>
+        <Languages />
         <Mission />
         <br />
         <Skills />
@@ -45,9 +47,9 @@ function App() {
         <div style={{color: "white", paddingTop: "40px"}}>
           <br /> Hover over cards to open project and view description!
         </div>
-        <Footer /> */}
+        <Footer />
       </div>
-    </Router>
+    </>
   );
 }
 
