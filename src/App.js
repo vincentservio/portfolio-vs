@@ -8,7 +8,7 @@ import Portfolio from "./Portfolio/Portfolio.js";
 import {Footer} from "./Footer/Footer";
 import Nav from "./Nav";
 
-// import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Project from "./Skills/project";
 import ProjectsTab from "./Tabs/ProjectsTab";
 import HomeTab from "./Tabs/HomeTab";
@@ -17,39 +17,37 @@ import ContactTab from "./Tabs/ContactTab";
 
 function App() {
   return (
-    // <Router>
-    <>
+    <Router>
       <Nav />
       <div className="App">
         <Header />
 
-        {/* <Switch>
+        <Switch>
           <Route path="/Projects" exact component={ProjectsTab} />
           <Route path="/About" exact component={AboutTab} />
           <Route path="/Contact" exact component={ContactTab} />
           <Route path="/" exact component={HomeTab} />
-        </Switch> */}
-
-        <br />
-        <div className="titles">
-          Web Developer
           <br />
-          With Hands On Experience
-        </div>
-        <Languages />
-        <Mission />
-        <br />
-        <Skills />
-        <div className="titles" style={{fontSize: "5vw"}}>
-          PROJECT PORTFOLIO
-        </div>
-        <Portfolio />
-        <div style={{color: "white", paddingTop: "40px"}}>
-          <br /> Hover over cards to open project and view description!
-        </div>
-        <Footer />
+          <div className="titles">
+            Web Developer
+            <br />
+            With Hands On Experience
+          </div>
+          <Languages />
+          <Mission />
+          <br />
+          <Skills />
+          <div className="titles" style={{fontSize: "5vw"}}>
+            PROJECT PORTFOLIO
+          </div>
+          <Portfolio />
+          <div style={{color: "white", paddingTop: "40px"}}>
+            <br /> Hover over cards to open project and view description!
+          </div>
+          <Footer />
+        </Switch>
       </div>
-    </>
+    </Router>
   );
 }
 

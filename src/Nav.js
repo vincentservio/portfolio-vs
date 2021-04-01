@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+import {Link} from "react-router-dom";
 //import react pro sidebar components
 import {
   ProSidebar,
@@ -24,26 +24,35 @@ import {BiCog} from "react-icons/bi";
 //import sidebar css from react-pro-sidebar module and our custom css
 import "react-pro-sidebar/dist/css/styles.css";
 import "./portfolio.css";
+import Portfolio from "./Portfolio/Portfolio";
+import AboutTab from "./Tabs/AboutTab";
 
 const Nav = () => {
-  //create initial menuCollapse state using useState hook
   const [menuCollapse, setMenuCollapse] = useState(true);
 
-  //create a custom function that will change menucollapse state from false to true and true to false
   const menuIconClick = () => {
-    //condition checking to change state from true to false and vice versa
     menuCollapse ? setMenuCollapse(true) : setMenuCollapse(false);
+  };
+  const changeTab = () => {
+    return <AboutTab></AboutTab>;
   };
 
   return (
     <>
+      <div>
+        <Link to="/">Home</Link>
+        <Link to="/About">About</Link>
+        <Link to="/Contact">Contact</Link>
+        <Link to="/Projects">Projects</Link>
+      </div>
+
       <div id="header">
-        {/* collapsed props to change menu size using menucollapse state */}
         <ProSidebar collapsed={menuCollapse}>
           <SidebarHeader>
             <div className="logotext">
-              {/* small and big change using menucollapse state */}
-              <p>{menuCollapse ? "Logo" : "Big Logo"}</p>
+              <p>
+                <img src="./favicon.ico"></img>
+              </p>
             </div>
             <div className="closemenu" onClick={menuIconClick}>
               {/* changing menu collapse icon on click */}
@@ -53,10 +62,17 @@ const Nav = () => {
           <SidebarContent>
             <Menu iconShape="square">
               <MenuItem active={false} icon={<FiHome />}>
-                Home
+                <Link to="/">Home</Link>
               </MenuItem>
-              <MenuItem icon={<FaList />}>Category</MenuItem>
-              <MenuItem icon={<FaRegHeart />}>Favourite</MenuItem>
+              <MenuItem onClick={changeTab} icon={<FaList />}>
+                <Link to="/About">About</Link>
+              </MenuItem>
+              <MenuItem
+                onClick={<Link to="/">Home</Link>}
+                icon={<FaRegHeart />}
+              >
+                Favourite
+              </MenuItem>
               <MenuItem icon={<RiPencilLine />}>Author</MenuItem>
               <MenuItem icon={<BiCog />}>Settings</MenuItem>
             </Menu>

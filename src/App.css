@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  border: rgb(59, 59, 59);
+  border: rgb(0, 0, 0);
   border-radius: 10px;
   padding-top: 5vw;
   padding-right: 5vw;
@@ -22,7 +22,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
