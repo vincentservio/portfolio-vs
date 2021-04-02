@@ -20,12 +20,14 @@ export default function HomeTab() {
       <Mission />
       <br />
       <Skills />
-      <div className="titles" style={{fontSize: "5vw"}}>
-        PROJECT PORTFOLIO
-      </div>
+
       <Portfolio />
       <div style={{color: "white", paddingTop: "40px"}}>
         <br /> Hover over cards to open project and view description!
+      </div>
+
+      <div className="titles" style={{fontSize: "5vw"}}>
+        PROJECT PORTFOLIO
       </div>
       <Footer />
     </div>
