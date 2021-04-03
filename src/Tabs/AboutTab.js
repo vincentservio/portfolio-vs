@@ -1,6 +1,7 @@
 import React from "react";
 
 function AboutTab() {
+  // document.getElementsByClassName("App").scrollIntoView();
   return (
     <div className="App">
       <h1>About Vincent Servio</h1>
