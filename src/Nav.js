@@ -61,20 +61,28 @@ const Nav = () => {
           </SidebarHeader>
           <SidebarContent>
             <Menu iconShape="square">
-              <MenuItem active={false} icon={<FiHome />}>
+              <MenuItem active={false} onClick={changeTab} icon={<FiHome />}>
                 <Link to="/">Home</Link>
               </MenuItem>
               <MenuItem onClick={changeTab} icon={<FaList />}>
                 <Link to="/About">About</Link>
               </MenuItem>
               <MenuItem
-                onClick={<Link to="/">Home</Link>}
+                onClick={
+                  <Link to="/" onClick={changeTab}>
+                    Home
+                  </Link>
+                }
                 icon={<FaRegHeart />}
               >
                 Favourite
               </MenuItem>
-              <MenuItem icon={<RiPencilLine />}>Author</MenuItem>
-              <MenuItem icon={<BiCog />}>Settings</MenuItem>
+              <MenuItem icon={<RiPencilLine />} onClick={changeTab}>
+                Author
+              </MenuItem>
+              <MenuItem icon={<BiCog />} onClick={changeTab}>
+                Settings
+              </MenuItem>
             </Menu>
           </SidebarContent>
           <SidebarFooter>
