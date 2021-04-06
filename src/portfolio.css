@@ -458,8 +458,8 @@ a:hover {
 }
 .Nav {
   text-align: center;
-
-  color: #fff;
+  background-color: #000000;
+  color: rgb(0, 0, 0);
   font-size: 3vw;
 }
 

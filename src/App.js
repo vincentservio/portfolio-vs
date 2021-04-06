@@ -6,7 +6,7 @@ import {Languages} from "./Skills/Languages";
 import Skills from "./Skills";
 import Portfolio from "./Portfolio/Portfolio.js";
 import {Footer} from "./Footer/Footer";
-import Nav from "./Nav";
+import {Nav} from "./Nav";
 
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Project from "./Skills/project";
@@ -18,8 +18,8 @@ import ContactTab from "./Tabs/ContactTab";
 function App() {
   return (
     <Router>
-      <Nav />
       <div className="App">
+        <Nav />
         <Header />
 
         <Switch>
