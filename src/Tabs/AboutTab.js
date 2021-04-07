@@ -1,9 +1,9 @@
 import React from "react";
 
 function AboutTab() {
-  // document.getElementsByClassName("App").scrollIntoView();
   return (
     <div className="App">
+      {document.getElementsByClassName("App").scrollIntoView()}{" "}
       <h1>About Vincent Servio</h1>
       As a driven, hardworking young man starting my coding career, I know that
       I can positively impact Nike's goals in the Software Engineering role. I
