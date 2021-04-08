@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+// import React, {useState} from "react";
 
 export const ContactPage = (props) => {
   //   props.map((prop) => <div className="contact"> {prop}</div>);
@@ -7,7 +7,12 @@ export const ContactPage = (props) => {
   //   debugger;
 
   return (
-    <div className="contactTab" onClick={props.handleClick}>
+    <div
+      className="contactTab"
+      onClick={props.handleClick}
+      onMouseOver={props.handleMouseOver}
+    >
+      <div></div>
       {props.icon}
     </div>
   );

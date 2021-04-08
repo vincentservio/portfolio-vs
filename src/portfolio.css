@@ -353,10 +353,13 @@ button {
   color: rgb(219, 159, 159);
   /* transition: all 0.2s ease-in-out; */
 }
-.contact:hover {
+.contact:hover,
+.contactTab:hover {
   filter: invert(100%);
 }
-
+.contactTab {
+  padding-top: 6px;
+}
 .ocs {
   position: relative;
   z-index: 2;

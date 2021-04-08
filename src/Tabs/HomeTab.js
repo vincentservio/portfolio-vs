@@ -9,7 +9,7 @@ import {Footer} from "../Footer/Footer";
 export default function HomeTab() {
   return (
     <div className="App">
-      {/* <Header /> */}
+      <Header />
       <br />
       <div className="titles">
         Web Developer

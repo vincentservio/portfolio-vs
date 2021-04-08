@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-scroll";
+import {Languages} from "../Skills/Languages";
 
 function AboutTab() {
   return (
@@ -34,6 +35,9 @@ function AboutTab() {
       future success and growth in the Software Engineering role. Thank you for
       your time and consideration of my candidacy in the Software Engineering
       role.
+      <center>
+        <Languages></Languages>
+      </center>
     </div>
   );
 }

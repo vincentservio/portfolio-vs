@@ -12,7 +12,7 @@ export default function ProjectsTab() {
           allowing them to store instrumental links and lyrics/notes.
         </div>
       </center>
-
+      <br></br>
       <a
         href="https://trackbackers-65bf1.web.app/"
         target="_blank"
@@ -32,6 +32,8 @@ export default function ProjectsTab() {
           virtual sneaker closet.
         </div>
       </center>
+      <br></br>
+
       <a
         href="https://feetlockers.herokuapp.com/"
         target="_blank"
@@ -50,6 +52,7 @@ export default function ProjectsTab() {
           virtual sneaker closet.
         </div>
       </center>
+      <br></br>
       <a
         href="https://vincentservio.github.io/ChoreKeeper_frontend/"
         target="_blank"

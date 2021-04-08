@@ -12,52 +12,57 @@ export const ContactTab = () => {
 
   const con = {
     email: {
+      name: "Email Me Now! ",
       icon: (
         <FontAwesomeIcon
           icon={faEnvelope}
-          size="1x"
+          size="3x"
           color="rgb(219, 159, 159)"
         />
       ),
       link: "mailto:SoftwareSolutions@VincentServio.com",
     },
     linkendin: {
+      name: "Connect With Me On Linkedin!",
       icon: (
         <FontAwesomeIcon
           // onClick={(window.location = "google.com")}
           icon={faLinkedin}
-          size="1x"
+          size="3x"
           color="rgb(219, 159, 159)"
         />
       ),
       link: "https://www.linkedin.com/in/vincent-servio-086bbb87/",
     },
     github: {
+      name: "Visit My GitHub Account ",
       icon: (
         <FontAwesomeIcon
           // onClick={(window.location = "google.com")}
           icon={faGithub}
-          size="1x"
+          size="3x"
           color="rgb(219, 159, 159)"
         />
       ),
       link: "https://github.com/vincentservio",
     },
     twitter: {
+      name: "Tweet Me!",
       icon: (
         <FontAwesomeIcon
           icon={faTwitter}
-          size="1x"
+          size="3x"
           color="rgb(219, 159, 159)"
         />
       ),
       link: "https://twitter.com/vincentservio",
     },
     resume: {
+      name: "Check Out My Resume",
       icon: (
         <FontAwesomeIcon
           icon={faFileAlt}
-          size="1x"
+          size="3x"
           color="rgb(219, 159, 159)"
         />
       ),
@@ -78,16 +83,25 @@ export const ContactTab = () => {
         </div>
       );
     };
+
+    const handleMouseOver = () => {
+      return <div className="contactTab">HELLO</div>;
+    };
     return (
       <>
-        <ContactPage key={i} icon={reach.icon} handleClick={clickHandle} />
+        <ContactPage
+          key={i}
+          icon={reach.icon}
+          handleClick={clickHandle}
+          handleMouseOver={handleMouseOver}
+        />
       </>
     );
   });
   return (
     // <div className="Footer">
-    //   <div className="foot-text">{reachme}</div>{" "}
-    <center className="copy">© 2021 VincentServio.com, Copyright </center>
+    //   <div className="foot-text"></div>{" "}
+    <center>{reachme}© 2021 VincentServio.com, Copyright </center>
     /* </div> */
   );
 };
