@@ -13,7 +13,7 @@ import Project from "./Skills/project";
 import ProjectsTab from "./Tabs/ProjectsTab";
 import HomeTab from "./Tabs/HomeTab";
 import AboutTab from "./Tabs/AboutTab";
-import ContactTab from "./Tabs/ContactTab";
+import {ContactTab} from "./Tabs/ContactTab";
 
 function App() {
   return (

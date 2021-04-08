@@ -1,9 +1,20 @@
 import React from "react";
+import {Link} from "react-scroll";
 
 function AboutTab() {
   return (
     <div className="App">
-      {document.getElementsByClassName("App").scrollIntoView()}{" "}
+      <Link
+        to="/About"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+      >
+        About
+      </Link>
+      {/* {document.getElementsByClassName("App").scrollIntoView()}{" "} */}
       <h1>About Vincent Servio</h1>
       As a driven, hardworking young man starting my coding career, I know that
       I can positively impact Nike's goals in the Software Engineering role. I

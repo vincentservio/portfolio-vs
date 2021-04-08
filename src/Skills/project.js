@@ -9,7 +9,13 @@ export default function Project(props) {
         <div className={"overlay"} />
         <div className={"ms"}>
           <h1>{props.title}</h1>
-          <img src={props.gif} className={"preview"} alt="img" />
+          <img
+            src={props.gif}
+            height={"550vw"}
+            width={"50vw"}
+            className={"preview"}
+            alt="img"
+          />
           <div style={{color: "black"}}>{props.description}</div>
           <button onClick={() => setIsOpen(false)}>Close</button>
         </div>
