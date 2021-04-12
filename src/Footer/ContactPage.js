@@ -13,6 +13,7 @@ export const ContactPage = (props) => {
       onMouseOver={props.handleMouseOver}
     >
       <div></div>
+
       {props.icon}
     </div>
   );

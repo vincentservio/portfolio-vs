@@ -602,3 +602,22 @@ a:hover {
 #header .logo {
   /* padding: 20px; */
 }
+.Contacts {
+  margin-top: 100px;
+}
+
+#a {
+  animation: slide-left 1s;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}

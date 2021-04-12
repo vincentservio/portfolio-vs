@@ -20,7 +20,7 @@ function App() {
     <Router>
       <div className="App">
         <Nav />
-        <Header />
+        {/* <Header /> */}
 
         <Switch>
           <Route path="/Projects" exact component={ProjectsTab} />
