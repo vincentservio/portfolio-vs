@@ -1,6 +1,8 @@
-import React from "react";
-
+import React, {useState} from "react";
+import projects from "../ProjectsTab";
 export default function ProjectsTab() {
+  const [project, setProject] = useState(4);
+  console.log(projects);
   return (
     <div className="projects">
       <h1>TrackBackers</h1>
