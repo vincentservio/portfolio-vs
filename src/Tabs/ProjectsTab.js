@@ -1,7 +1,14 @@
 import React, {useState} from "react";
-import projects from "../ProjectsTab";
+import projects from "../ProjectsList";
 export default function ProjectsTab() {
-  const [project, setProject] = useState(4);
+  const pro = Object.values(projects);
+  const project = pro.map((app, i) => {
+    return ()
+  }
+
+  debugger;
+  const [project, setProject] = useState("");
+
   console.log(projects);
   return (
     <div className="projects">

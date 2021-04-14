@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "../Skills/project";
-import projects from "../ProjectsTab";
+import projects from "../ProjectsList";
 {
   /* <img src={imag} alt="new"></img> */
 }
