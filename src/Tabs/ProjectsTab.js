@@ -7,29 +7,30 @@ export default function ProjectsTab() {
   };
 
   const pro = Object.values(projects);
-  const project = pro.map((app, i) => {
-    // debugger;
-    return (
-      <div className="projects">
+  // const project = pro.map((app, i) => {
+  // debugger;
+  return (
+    <div className="projects">
+      <center>
         <div className="container">
           <div className="bloc-tabs">
             <button
               className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
               onClick={() => toggleTab(1)}
             >
-              Tab 1
+              {pro[0].title}
             </button>
             <button
               className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
               onClick={() => toggleTab(2)}
             >
-              Tab 2
+              {pro[1].title}
             </button>
             <button
               className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
               onClick={() => toggleTab(3)}
             >
-              Tab 3
+              {pro[2].title}
             </button>
           </div>
 
@@ -39,13 +40,15 @@ export default function ProjectsTab() {
                 toggleState === 1 ? "content  active-content" : "content"
               }
             >
-              <h2>Content 1</h2>
-              <hr />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati praesentium incidunt quia aspernatur quasi quidem
-                facilis quo nihil vel voluptatum?
-              </p>
+              <h1>{pro[0].title}</h1>
+              <img src={pro[0].gif} alt="img" />
+              <center>
+                <div className="one">{pro[0].description}</div>
+              </center>
+              <br></br>
+              <a href={pro[0].link} target="_blank" rel="noopener noreferrer">
+                <button> Try {pro[0].title}!!!</button>
+              </a>
             </div>
 
             <div
@@ -53,12 +56,15 @@ export default function ProjectsTab() {
                 toggleState === 2 ? "content  active-content" : "content"
               }
             >
-              <h2>Content 2</h2>
-              <hr />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente voluptatum qui adipisci.
-              </p>
+              <h1>{pro[1].title}</h1>
+              <img src={pro[1].gif} className={"two"} alt="img" />
+              <center>
+                <div className="one">{pro[1].description}</div>
+              </center>
+              <br></br>
+              <a href={pro[1].link} target="_blank" rel="noopener noreferrer">
+                <button> Try {pro[1].title}!!!</button>
+              </a>
             </div>
 
             <div
@@ -66,21 +72,20 @@ export default function ProjectsTab() {
                 toggleState === 3 ? "content  active-content" : "content"
               }
             >
-              <h2>Content 3</h2>
-              <hr />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                sed nostrum rerum laudantium totam unde adipisci incidunt modi
-                alias! Accusamus in quia odit aspernatur provident et ad vel
-                distinctio recusandae totam quidem repudiandae omnis veritatis
-                nostrum laboriosam architecto optio rem, dignissimos voluptatum
-                beatae aperiam voluptatem atque. Beatae rerum dolores sunt.
-              </p>
+              <h1>{pro[2].title}</h1>
+              <img src={pro[2].gif} className={"two"} alt="img" />
+              <center>
+                <div className="one">{pro[2].description}</div>
+              </center>
+              <br></br>
+              <a href={pro[2].link} target="_blank" rel="noopener noreferrer">
+                <button> Try {pro[2].title}!!!</button>
+              </a>
             </div>
           </div>
         </div>
 
-        <h1>{app.title}</h1>
+        {/* <h1>{app.title}</h1>
         <img src={app.gif} className={"two"} alt="img" />
         <center>
           <div className="one">{app.description}</div>
@@ -88,11 +93,12 @@ export default function ProjectsTab() {
         <br></br>
         <a href={app.link} target="_blank" rel="noopener noreferrer">
           <button> Try {app.title}!!!</button>
-        </a>
-      </div>
-    );
-  });
-  return <div>{project}</div>;
+        </a> */}
+      </center>
+    </div>
+  );
+
+  // return <div>{project}</div>;
 
   // // debugger;
   // const [project, setProject] = useState("");

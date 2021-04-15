@@ -436,7 +436,7 @@ button {
 
   position: absolute;
   bottom: 1px;
-  text-align: center;
+  /* text-align: center; */
   left: 10vw;
   color: rgb(219, 159, 159);
   size: 1vw;
@@ -475,7 +475,7 @@ a:hover {
 }
 
 .one {
-  align-self: center;
+  /* align-self: center; */
   width: 50%;
   /* height: 200px; */
   background: rgba(0, 0, 0, 0.39);
@@ -497,13 +497,13 @@ a:hover {
 @media only screen and (max-width: 768px) {
   .one {
     font-size: 7px;
-    text-align: center;
-    float: none;
+    /* text-align: center; */
+    /* float: none; */
     padding-right: 54px;
   }
   .two {
     height: 35vw;
-    text-align: center;
+    /* text-align: center; */
   }
 }
 
@@ -638,8 +638,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 500px;
-  height: 300px;
+  width: 900px;
+  height: 1000px;
   background: #000000;
   margin: 100px auto 0;
   word-break: break-all;
@@ -651,7 +651,7 @@ a:hover {
 }
 .tabs {
   padding: 15px;
-  text-align: center;
+  /* text-align: center; */
   width: 50%;
   background: rgba(128, 128, 128, 0.075);
   cursor: pointer;
@@ -674,7 +674,7 @@ a:hover {
   display: block;
   position: absolute;
   top: -5px;
-  left: 50%;
+  /* left: 50%; */
   transform: translateX(-50%);
   width: calc(100% + 2px);
   height: 5px;
@@ -700,7 +700,7 @@ button {
 .content hr {
   width: 100px;
   height: 2px;
-  background: #222;
+  background: rgb(0, 0, 0);
   margin-bottom: 5px;
 }
 .content p {
