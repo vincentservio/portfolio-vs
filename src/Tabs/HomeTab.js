@@ -23,7 +23,7 @@ export default function HomeTab() {
 
       <Portfolio />
       <div style={{color: "white", paddingTop: "40px"}}>
-        <br /> Hover over cards to open project and view description!
+        <br /> Hover over the card to open project and view description!
       </div>
 
       <div className="titles" style={{fontSize: "5vw"}}>

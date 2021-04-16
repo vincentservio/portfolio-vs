@@ -12,7 +12,7 @@ export const ContactTab = () => {
 
   const con = {
     email: {
-      name: "Email Me Now! ",
+      name: "Email Me Now!",
       icon: (
         <FontAwesomeIcon
           icon={faEnvelope}
