@@ -638,7 +638,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 900px;
+  width: 100%;
   height: 1000px;
   background: #000000;
   margin: 100px auto 0;
@@ -647,13 +647,14 @@ a:hover {
 }
 
 .bloc-tabs {
+  margin-left: 12px;
   display: flex;
 }
 .tabs {
   padding: 15px;
   /* text-align: center; */
   width: 50%;
-  background: rgba(128, 128, 128, 0.075);
+  background: rgba(0, 0, 0, 0);
   cursor: pointer;
   border-bottom: 1px solid rgba(0, 0, 0, 0.274);
   box-sizing: content-box;
@@ -670,15 +671,16 @@ a:hover {
 }
 
 .active-tabs::before {
+  /* margin-left: 25px; */
   content: "";
   display: block;
   position: absolute;
   top: -5px;
   /* left: 50%; */
-  transform: translateX(-50%);
-  width: calc(100% + 2px);
+  /* transform: translateX(-50%); */
+  width: calc(90%);
   height: 5px;
-  background: rgb(88, 147, 241);
+  background: rgb(88, 231, 241);
 }
 
 button {
@@ -688,7 +690,7 @@ button {
   flex-grow: 1;
 }
 .content {
-  background: rgb(0, 0, 0);
+  background: rgba(255, 0, 0, 0.178);
   padding: 20px;
   width: 100%;
   height: 100%;
