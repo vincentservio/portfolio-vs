@@ -7,7 +7,26 @@ export default function ProjectsTab() {
   };
 
   const pro = Object.values(projects);
-  // const project = pro.map((app, i) => {
+  const project = pro.map((app, i) => {
+    return (
+      <div
+        className={
+          toggleState === i + 1 ? "content  active-content" : "content"
+        }
+      >
+        <h1 style={{color: "black"}}>{app.title}</h1>
+        <img src={app.gif} className={"two"} alt="img" />
+        <a href={app.link} target="_blank" rel="noopener noreferrer">
+          <button> Try {app.title}!!!</button>
+        </a>
+        <br></br>
+        <center>
+          <div className="one">{app.description}</div>
+        </center>
+      </div>
+    );
+  });
+
   // debugger;
   return (
     <div className="projects">
@@ -34,6 +53,8 @@ export default function ProjectsTab() {
             </button>
           </div>
 
+          <div>{project}</div>
+          {/* 
           <div className="content-tabs">
             <div
               className={
@@ -79,21 +100,21 @@ export default function ProjectsTab() {
               </center>
               <br></br>
               <a href={pro[2].link} target="_blank" rel="noopener noreferrer">
-                <button> Try {pro[2].title}!!!</button>
-              </a>
-            </div>
-          </div>
+                <button> Try {pro[2].title}!!!</button> */}
+          {/* </a> */}
         </div>
+        {/* </div> */}
+        {/* </div> */}
 
         {/* <h1>{app.title}</h1>
-        <img src={app.gif} className={"two"} alt="img" />
-        <center>
-          <div className="one">{app.description}</div>
-        </center>
-        <br></br>
-        <a href={app.link} target="_blank" rel="noopener noreferrer">
-          <button> Try {app.title}!!!</button>
-        </a> */}
+      <img src={app.gif} className={"two"} alt="img" />
+      <center>
+        <div className="one">{app.description}</div>
+      </center>
+      <br></br>
+      <a href={app.link} target="_blank" rel="noopener noreferrer">
+        <button> Try {app.title}!!!</button>
+      </a> */}
       </center>
     </div>
   );
