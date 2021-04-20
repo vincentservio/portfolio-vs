@@ -1,4 +1,6 @@
 import React from "react";
+import "../port.scss";
+// import "./App.css";
 import {Link} from "react-scroll";
 import {Languages} from "../Skills/Languages";
 
@@ -27,64 +29,103 @@ function AboutTab() {
       <center>
         <Languages></Languages>
       </center>
-      <div class="cardTop">
-        <svg
-          width="497"
-          height="219"
-          viewBox="0 0 497 219"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M-38.5 196C-38.5 196 34 91 133.5 91C233 91 427 159 532.5 30C638 -99 518 236 518 236L-49 246.5L-38.5 196Z"
-            fill="#FF768E"
-          />
-        </svg>
-      </div>
-      <div class="timeline">
-        <h3>Updates</h3>
-        <label>23 in the last 7 hours</label>
+      <body data-spy="scroll" data-target="#navbar-example">
+        <div class="wrapper">
+          <nav class="nav__wrapper" id="navbar-example">
+            <ul class="nav">
+              <li role="presentation" class="active">
+                <a href="#section1">
+                  <span class="nav__counter">01</span>
+                  <h3 class="nav__title">Intro</h3>
+                  <p class="nav__body">
+                    <strong>Timeline-style navigation</strong>. Scroll down to
+                    see what happens, or click on a number in the nav.
+                  </p>
+                </a>
+              </li>
 
-        <div class="box">
-          <div class="container">
-            <div class="lines">
-              <div class="dot"></div>
-              <div class="line"></div>
-              <div class="dot"></div>
-              <div class="line"></div>
-              <div class="dot"></div>
-              <div class="line"></div>
-            </div>
+              <li role="presentation">
+                <a href="#section2">
+                  <span class="nav__counter">02</span>
+                  <h3 class="nav__title">Section 2 Title</h3>
+                  <p class="nav__body">
+                    Sed sit amet justo sed odio tempus tempus. Vestibulum sed
+                    varius mi, sit amet condimentum lacus.
+                  </p>
+                </a>
+              </li>
 
-            <div class="cards">
-              <div class="card">
-                <h4>16:30</h4>
-                <p>
-                  Believing Is The Absence
-                  <br /> Of Doubt
-                </p>
-              </div>
-              <div class="card mid">
-                <h4>15:22</h4>
-                <p>Start With A Baseline</p>
-              </div>
-              <div class="card">
-                <h4>14:15</h4>
-                <p>
-                  Break Through Self Doubt
-                  <br /> And Fear
-                </p>
-              </div>
-            </div>
-          </div>
+              <li role="presentation">
+                <a href="#section3">
+                  <span class="nav__counter">03</span>
+                  <h3 class="nav__title">Section 3 Title</h3>
+                  <p class="nav__body">
+                    Sed sit amet justo sed odio tempus tempus. Vestibulum sed
+                    varius mi, sit amet condimentum lacus.
+                  </p>
+                </a>
+              </li>
 
-          <div class="bottom">
-            <div class="btn">Show all updates</div>
-          </div>
+              <li role="presentation">
+                <a href="#section4">
+                  <span class="nav__counter">04</span>
+                  <h3 class="nav__title">Section 4 Title</h3>
+                  <p class="nav__body">
+                    Sed sit amet justo sed odio tempus tempus. Vestibulum sed
+                    varius mi, sit amet condimentum lacus.
+                  </p>
+                </a>
+              </li>
+
+              <li role="presentation">
+                <a href="#section5">
+                  <span class="nav__counter">05</span>
+                  <h3 class="nav__title">Section 5 Title</h3>
+                  <p class="nav__body">
+                    Sed sit amet justo sed odio tempus tempus. Vestibulum sed
+                    varius mi, sit amet condimentum lacus.
+                  </p>
+                </a>
+              </li>
+
+              <li role="presentation">
+                <a href="#section6">
+                  <span class="nav__counter">06</span>
+                  <h3 class="nav__title">Section 6 Title</h3>
+                  <p class="nav__body">
+                    Sed sit amet justo sed odio tempus tempus. Vestibulum sed
+                    varius mi, sit amet condimentum lacus.
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <section class="section section1" id="section1">
+            Scroll down or use the nav.
+          </section>
+
+          <section class="section section2" id="section2">
+            Section 2
+          </section>
+
+          <section class="section section3" id="section3">
+            Section 3
+          </section>
+
+          <section class="section section4" id="section4">
+            Section 4
+          </section>
+
+          <section class="section section5" id="section5">
+            Section 5
+          </section>
+
+          <section class="section section6" id="section6">
+            Section 6
+          </section>
         </div>
-      </div>
+      </body>
     </div>
   );
 }
