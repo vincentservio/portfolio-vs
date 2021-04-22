@@ -93,7 +93,7 @@ header {
   /* vertical-align: text-bottom; */
 }
 button {
-  background-color: rgb(29, 49, 42);
+  background-color: rgb(194, 167, 238);
   font-size: 21px;
   border: none;
   color: rgb(255, 255, 255);
@@ -102,9 +102,11 @@ button {
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  border-radius: 16px;
+
+  /* border-radius: 5px; */
   font-family: "Gill Sans", sans-serif;
   font-weight: bold;
+  box-shadow: 2px 2px;
 }
 
 .background {
@@ -598,7 +600,7 @@ a:hover {
   .pro-inner-item
   .pro-icon-wrapper
   .pro-item-content {
-  color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0);
 }
 #header .pro-sidebar-inner .pro-sidebar-layout .active {
   /* background-image: linear-gradient(0deg, #fece00 0%, #ffe172 100%); */
@@ -657,11 +659,11 @@ a:hover {
 .tabs {
   padding: 15px;
   /* text-align: center; */
-  width: 50%;
+  width: 70%;
   background: rgba(0, 0, 0, 0);
   cursor: pointer;
   border-bottom: 1px solid rgba(0, 0, 0, 0.274);
-  box-sizing: content-box;
+  /* box-sizing: content-box; */
   position: relative;
   outline: none;
 }
@@ -670,7 +672,8 @@ a:hover {
 }
 
 .active-tabs {
-  background: rgb(147, 97, 228);
+  color: #000000;
+  background: rgb(255, 255, 255);
   border-bottom: 1px solid transparent;
 }
 
@@ -684,6 +687,7 @@ a:hover {
   /* transform: translateX(-50%); */
   width: calc(90%);
   height: 5px;
+  transition: transform 250ms linear;
   background: rgb(88, 231, 241);
 }
 
