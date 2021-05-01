@@ -720,3 +720,7 @@ button {
 .active-content {
   display: block;
 }
+.event {
+  color: #fff;
+  background-color: #000000;
+}
