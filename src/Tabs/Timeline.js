@@ -12,36 +12,33 @@ export default function Timeline() {
               </h1>
               <ul class="timeline">
                 <li class="event" data-date="2015/Present">
-                  <h3>Management and Entreprenurship (MSc)</h3>
+                  <h3>Invicta Watch Corp. Staten Island, New York Assistant</h3>
                   <p>
-                    This September 2015 I will begin an MSc in Management and
-                    Entrepreneurship at University of Sussex, to broaden my
-                    knowledge and gain skills necessary for my future in
-                    business and management.
+                    Manager 10/2018 – 10/2019 Acquired and maintained an astute
+                    knowledge of all products and promotions being offered.
+                    Cultivated a good rapport with other staff members and
+                    customers. Managed staff and delegated tasks and
+                    responsibilities to other staff members. Ensured a clean
+                    store consistently for good customer experience. Oversaw
+                    opening and closing procedures, handled cash and deposits.
+                    Achieved and exceeded selling goals for continuous
+                    improvement. Utilized top notch communication and
+                    troubleshooting skills.
                   </p>
                 </li>
                 <li class="event" data-date="2015/Present">
-                  <h3>Claromentis</h3>
+                  <h3> Victra / A - Wireless Staten Island, New York Sales</h3>
                   <p>
-                    Claromentis is an intranet software provider company. I
-                    started working at the Brighton office as a Marketing
-                    Designer while I was still attending my final year at the
-                    University of Sussex. My primary responsibilities included
-                    creating corporate identity for the company; I re-designed
-                    their website, and have created marketing materials such as
-                    brochures.
-                  </p>
-                  <p>
-                    Since graduating from university, I have also undertaken
-                    responsibilities for designing a product for the company.
-                    The roles I have been given have provided the perfect
-                    opportunity to implement the skills I have gained throughout
-                    my higher education, as well as experiencing the running of
-                    a successful business.
+                    Associate 02/2016- 09/2018 Provided hands on customer
+                    service and technical assistance within the store. Had
+                    responsibility for opening and closing procedures, handling
+                    cash and credit cards, helping to train new staff, achieving
+                    sales goals consistently, and maintaining a clean store for
+                    customer experience.
                   </p>
                 </li>
                 <li class="event" data-date="2012/2015">
-                  <h3>Games & Multimedia Environments BSc (Hons)</h3>
+                  <h3> Flatiron School 02/ 2020 - 10/2020</h3>
                   <p>
                     Throughout my degree I have gained expansive knowledge of
                     informatics areas including Human Computer Interaction,
