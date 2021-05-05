@@ -1,123 +1,183 @@
-.wrapper {
-  min-height: 100vh;
-  font-family: "Roboto Slab", serif;
-  font-weight: 300;
-  color: #fff;
-  position: relative;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+
+// How many menu items do we have?
+$menu-items: 5;
+
+// Colours
+$background-color: #121212;
+$indicator-color: #e82d00;
+
+// Transition Speed
+$transition-speed: 1.3s;
+
+// Dynamic Variables
+$width: (100 / $menu-items) * 1%; // makes each item the right size
+$menu-items-loop-offset: $menu-items - 1; // the number of items in the menu
+
+// ======================================================
+// Step 1 - Making a Fixed Width Navigation
+// ======================================================
+
+.PrimaryNav {
+  @extend %cf; // clear the floats
+  list-style: none;
+  margin: 50px auto;
+  max-width: 720px; // As all measurements are using % this could be a flexible value.
+  padding: 0;
+  width: 100%;
 }
 
-section {
-  height: 100vh;
-  // font-size: 40px;
-  font-weight: 100;
-  background-color: #22a7f0;
+.Nav-item {
+  background: #fff;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: $width; //dynamic width
+  text-align: center;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &:first-child {
+    border-radius: 3px 0 0 3px;
+  }
 
-  $colors: white, #f64747, #22a7f0, #f9690e, #9b59b6, #03c9a9, #ffcc00;
-  @for $i from 1 through length($colors) {
-    &:nth-child(#{$i}) {
-      background: nth($colors, $i);
+  &:last-child {
+    border-radius: 0 3px 3px 0;
+  }
+
+  &.is-active a {
+    color: $indicator-color;
+  }
+
+  a {
+    color: $background-color;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+
+    &:hover {
+      color: $indicator-color;
     }
   }
 }
 
-.nav {
-  &__wrapper {
-    position: fixed;
-    height: 100%;
-    padding: 30px;
+// ======================================================
+// Step 2 - Making the pseudo indicator
+// ======================================================
 
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-end;
-  }
+.with-indicator {
+  position: relative; // the menu is "relative" to the absolute position last-child pseudo elements.
+  z-index: 0;
 
-  & {
-    margin: 0 0 100px 30px;
-  }
-  &__counter {
-    font-size: 24px;
-    transition: all 0.15s ease-out;
-  }
-  &__title {
-    font-size: 32px;
-    font-weight: 300;
-    margin: 0 0 0.25em;
-    width: 300px;
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: height 0.3s ease-out, opacity 0.2s ease-out;
-  }
-  &__body {
-    font-weight: 100;
-    font-size: 18px;
-    font-size: 18px;
-    width: 300px;
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: height 0.3s ease-out, opacity 0.2s ease-out;
-  }
-
-  li {
-    position: relative;
-    transition: all 0.3s ease-out;
-    margin-bottom: 1em;
-
-    &:after {
-      content: "";
-      display: block;
-      border-left: 2px solid white;
-      border-top: 2px solid white;
-      height: 250px;
-      width: 20px;
-      position: absolute;
-      left: -30px;
-      top: 15px;
-    }
-
-    a {
-      display: block;
-      padding: 0;
-      color: #fff;
-      transition: all 0.15s ease-out;
-
-      &:hover {
-        background-color: transparent;
-        padding-left: 1em;
-      }
-      &:focus {
-        background-color: transparent;
-      }
-    }
-
-    &.active {
-      pointer-events: none;
-      padding-left: 1em;
-
+  .Nav-item {
+    // ======================================================
+    // Step 2.1 - Making the indicator with the pseudo element.
+    // ======================================================
+    &:last-child {
+      &:before,
       &:after {
-        width: 35px;
-        height: 400px;
-        top: 35px;
+        content: "";
+        display: block;
+        position: absolute;
+        pointer-events: none;
+        transition: left #{$transition-speed} ease;
       }
-
-      .nav__counter {
-        font-size: 48px;
+      // Making the top CSS Triangle - learn more: https://css-tricks.com/animation-css-triangles-work/
+      &:before {
+        border: 6px solid transparent;
+        border-top-color: $indicator-color;
+        width: 0;
+        height: 0;
+        top: 0;
+        left: ($width/2);
+        margin-left: -3px;
       }
-      .nav__title {
-        height: 40px;
-        opacity: 1;
-        overflow: visible;
-      }
-      .nav__body {
-        height: 100px;
-        opacity: 1;
-        overflow: visible;
+      &:after {
+        background: $indicator-color;
+        top: -6px;
+        bottom: -6px;
+        left: 0;
+        width: $width;
+        z-index: -1;
       }
     }
   }
+
+  @for $i from 1 through $menu-items-loop-offset {
+    // when the Nav item "is active", make the indicator line up with the navigation item.
+    .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:after {
+      left: ($width * $i)-$width;
+    }
+    .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before {
+      left: ($width * $i)+
+        ($width/2)-$width; // this ensures the triangle lines up to the menu.
+    }
+  }
+
+  // ======================================================
+  // Step 3 - Making it move
+  // ======================================================
+
+  // This could be in the same loop as the above but for the tutorial steps it's not
+  @for $i from 1 through $menu-items-loop-offset {
+    // We have to use !important to make the hovers overide if the last:child is the active or hovered
+    .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:after {
+      left: ($width * $i)-$width !important;
+    }
+
+    .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:before {
+      left: ($width * $i)+ ($width/2)-$width !important;
+    }
+  }
+
+  // this could be nested in the original .Nav-item
+  .Nav-item {
+    &:last-child {
+      // make sure the last-child talks to itself
+      &:hover,
+      &.is-active {
+        &:before {
+          // we have to use important because the sibling selctor is more specific.
+          left: (100%-$width)+ ($width/2) !important;
+        }
+        &:after {
+          left: 100%-$width !important;
+        }
+      }
+    }
+  }
+}
+
+// ======================================================
+// The usual Global resets
+// ======================================================
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; // learn more: https://css-tricks.com/box-sizing/
+}
+
+// Extending the https://css-tricks.com/micro-clearfix/
+%cf:before,
+%cf:after {
+  content: " ";
+  display: table;
+}
+%cf:after {
+  clear: both;
+}
+
+// Presentation Styling
+
+html {
+  background-color: $background-color;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+
+.toggle {
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
 }
