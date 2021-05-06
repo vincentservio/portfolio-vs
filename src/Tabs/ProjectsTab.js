@@ -36,7 +36,7 @@ export default function ProjectsTab() {
         <div className="container">
           <div className="bloc-tabs">
             <button
-              className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+              className={toggleState === 1 ? "tabs active-tabs " : "tabs"}
               onClick={() => toggleTab(1)}
             >
               {pro[0].title}
@@ -55,8 +55,7 @@ export default function ProjectsTab() {
             </button>
           </div>
           <div>
-          HTML SCSSResult Skip Results Iframe
-EDIT ON
+       
 <ul class="PrimaryNav with-indicator">
     <li class="Nav-item"><a href="#">Home</a></li>
     <li class="Nav-item"><a href="#">About</a></li>
