@@ -30,6 +30,7 @@ function AboutTab() {
       <center> */}
       <Languages></Languages>
       <Timeline></Timeline>
+      {/* <Timeline></Timeline> */}
       {/* </center> */}
     </div>
   );

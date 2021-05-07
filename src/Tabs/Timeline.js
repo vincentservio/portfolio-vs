@@ -1,40 +1,53 @@
 // import React from "react";
-import React, {
-  Component,
-  memo,
-  useCallback,
-  useState,
-  useEffect,
-  useMemo,
-} from "react";
+import React, {useCallback, useState, useMemo} from "react";
 import "./Timeline.css";
 import RangeSlider from "./RangeSlider";
+import RangeSlider2 from "./Hello";
 
 export default function Timeline() {
   const [parentVal, setParentVal] = useState(10);
+  const [parentVal2, setParentVal2] = useState(10);
 
   const sliderValueChanged = useCallback((val) => {
-    console.log("NEW VALUE", val);
     setParentVal(val);
   });
 
-  const sliderProps = useMemo(
-    () => ({
-      min: 0.99,
-      max: 100,
-      value: parentVal,
-      step: 0.25,
-      label: "This is a reusable slider",
-      onChange: (e) => sliderValueChanged(e),
-    }),
-    [parentVal]
-  );
+  const sliderProps = useMemo(() => ({
+    min: 0.99,
+    max: 100,
+    value: parentVal,
+    step: 0.25,
+    label: "This is a reusable slider",
+    onChange: (e) => sliderValueChanged(e),
+  }));
+
+  const sliderValueChanged2 = useCallback((val) => {
+    setParentVal2(val);
+  });
+
+  const sliderProps2 = useMemo(() => ({
+    min: 0.99,
+    max: 100,
+    value: parentVal2,
+    step: 0.25,
+    label: "This is a reusable slider",
+    onChange: (e) => sliderValueChanged2(e),
+  }));
 
   return (
     <div>
+      <Slider
+        defaultValue={value}
+        step={2}
+        onChange={this.onChange}
+        wrapperClassName={styles.slider}
+        trackClassName={styles.sliderTrack}
+        handleClassName={styles.sliderHandle}
+      />
       <h1>PARENT VALUE: {parentVal}</h1>
       <RangeSlider {...sliderProps} classes="additional-css-classes" />
-      <RangeSlider {...sliderProps} classes="additional-css-classes" />
+      {/* <h1>PARENT VALUE: {parentVal2}</h1> */}
+      {/* <RangeSlider2 {...sliderProps2} classes="additional-css-classes" /> */}
     </div>
   );
   // <div class="main-container">
