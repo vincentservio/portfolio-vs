@@ -187,3 +187,19 @@ a.portfolio-link {
   border: none !important;
   color: #39bcd3 !important;
 }
+
+.input-range {
+  margin-bottom: 160px;
+}
+
+.Timeline {
+  font-family: sans-serif;
+  text-align: center;
+}
+.slider-parent {
+  position: relative;
+}
+
+.buble {
+  position: absolute;
+}
