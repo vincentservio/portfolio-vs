@@ -16,24 +16,27 @@ export default function Timeline() {
   return (
     <>
       {" "}
-      {value}
-      <div className="slider-parent Timeline">
+      {/* {value} */}
+      <div className="slider-parent">
         <input
           type="range"
-          min="1"
-          max="100"
+          min="0000"
+          max="1000000"
+          step="1000"
           value={value}
           onChange={({target: {value: num}}) => {
             onChange(num);
           }}
         />
+        <div className="buble">{value}</div>
+        <br />
       </div>
-      <div> {value2}</div>
-      <div className="slider-parent2 Timeline">
+      {/* <div> {value2}</div> */}
+      <div className="slider-parent">
         <input
           type="range"
-          min="1"
-          max="500"
+          min="4.99"
+          max="49.99"
           step=".25"
           value={value2}
           onChange={({target: {value: num}}) => {
@@ -52,11 +55,13 @@ export default function Timeline() {
       /> */}
         {/* <div className="buble">{value2}</div> */}
       </div>
-      <div className="buble">{value}</div>
+      <div>{value2}</div>
       <div className="estimate">
-        You could earn between ${parseFloat(value) + parseFloat(value2)} and
-        $129,600 per month*
+        You could earn between $
+        {Math.floor((parseFloat(value) / 100) * parseFloat(value2))} and ${" "}
+        {Math.floor((parseFloat(value) / 20) * parseFloat(value2))} per month*
       </div>
+      hello
     </>
   );
 }

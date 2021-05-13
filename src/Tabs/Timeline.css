@@ -87,3 +87,8 @@ input[type="range"]:focus::-ms-fill-lower {
 input[type="range"]:focus::-ms-fill-upper {
   background: #51f0b0;
 }
+
+.estimate {
+  text-align: left;
+  padding: 100px;
+}
