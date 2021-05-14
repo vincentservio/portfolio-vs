@@ -58,8 +58,14 @@ export default function Timeline() {
       <div>{value2}</div>
       <div className="estimate">
         You could earn between $
-        {Math.floor((parseFloat(value) / 100) * parseFloat(value2))} and ${" "}
-        {Math.floor((parseFloat(value) / 20) * parseFloat(value2))} per month*
+        {Math.floor((parseFloat(value) / 100) * parseFloat(value2))
+          .toString()
+          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
+        and ${" "}
+        {Math.floor((parseFloat(value) / 20) * parseFloat(value2))
+          .toString()
+          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
+        per month*
       </div>
       hello
     </>
