@@ -8,6 +8,7 @@ export default function Timeline() {
 
   useEffect(() => {
     const ele = document.querySelector(".buble");
+
     if (ele) {
       ele.style.left = `${Number(value / 4)}px`;
     }
@@ -28,7 +29,10 @@ export default function Timeline() {
             onChange(num);
           }}
         />
-        <div className="buble">{value}</div>
+
+        <div className="buble">
+          {value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+        </div>
         <br />
       </div>
       {/* <div> {value2}</div> */}
@@ -43,17 +47,7 @@ export default function Timeline() {
             onChange2(num);
           }}
         />
-
-        {/* <input
-        type="range"
-        min="1"
-        max="500"
-        value={value2}
-        onChange={({target: {value2: radius}}) => {
-          onChange2(radius);
-        }}
-      /> */}
-        {/* <div className="buble">{value2}</div> */}
+        {/* {value > 100000 ? {step: "10000"} : {step: "1000"}} */}
       </div>
       <div>{value2}</div>
       <div className="estimate">
