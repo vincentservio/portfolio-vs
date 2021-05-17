@@ -8,16 +8,8 @@ import Timeline from "./Timeline";
 function AboutTab() {
   return (
     <div className="App">
-      <Link
-        to="/About"
-        activeClass="active"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-      >
-        {/* About */}
-      </Link>
+      {/* About */}
+
       {/* {document.getElementsByClassName("App").scrollIntoView()}{" "} */}
       {/* <h1>About Vincent Servio</h1>
       As a driven, hardworking young man starting my coding career, I know that
@@ -28,7 +20,7 @@ function AboutTab() {
       technology and offer great strengths in leadership, critical thinking and
       collaborative team work. Clear and focused on progress and forward motion,
       <center> */}
-      <Languages></Languages>
+      {/* <Languages></Languages> */}
       <Timeline></Timeline>
       {/* <Timeline></Timeline> */}
       {/* </center> */}

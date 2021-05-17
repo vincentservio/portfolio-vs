@@ -25,7 +25,7 @@ const cards = {
     program1: "Adobe Cloud",
     program2: "Microsoft Office",
     program3: "AutoCAD",
-    program4: "Logic Pro/ProTools",
+    program4: "ProTools",
   },
   Deployment: {
     icon: "https://img.icons8.com/ios-filled/50/000000/upload-to-cloud.png",
@@ -33,7 +33,7 @@ const cards = {
     program1: "Heroku",
     program2: "Firebase",
     program3: "AWS",
-    program4: "-",
+    program4: "Git",
   },
 };
 
