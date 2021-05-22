@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import projects from "../ProjectsList";
 
-
 export default function ProjectsTab() {
   const [toggleState, setToggleState] = useState(1);
   const toggleTab = (index) => {
@@ -55,16 +54,43 @@ export default function ProjectsTab() {
             </button>
           </div>
           <div>
-       
-<ul class="PrimaryNav with-indicator">
-    <li class="Nav-item"><a href="#">Home</a></li>
-    <li class="Nav-item"><a href="#">About</a></li>
-    <li class="Nav-item is-active"><a href="#">Writing</a></li>
-    <li class="Nav-item"><a href="#">Clients</a></li>
-    <li class="Nav-item"><a href="https://twitter.com/jnowland">Contact</a></li>
-  </ul>
-          
-          {project}</div>
+            <ul class="PrimaryNav with-indicator">
+              <li class="Nav-item">
+                <a href="#">Home</a>
+              </li>
+              <li
+                className={
+                  toggleState === 1 ? "Nav-item is-active" : "Nav-item"
+                }
+                onClick={() => toggleTab(1)}
+              >
+                <a>FeetLockers</a>
+              </li>
+              <li
+                className={
+                  toggleState === 2 ? "Nav-item is-active" : "Nav-item"
+                }
+                onClick={() => toggleTab(2)}
+              >
+                <a>ChoreKeeper</a>
+              </li>
+
+              <li
+                className={
+                  toggleState === 3 ? "Nav-item is-active" : "Nav-item"
+                }
+                onClick={() => toggleTab(3)}
+              >
+                <a>FeetLockers</a>
+              </li>
+
+              <li class="Nav-item">
+                <a href="https://twitter.com/jnowland">Contact</a>
+              </li>
+            </ul>
+
+            {project}
+          </div>
           {/* 
           <div className="content-tabs">
             <div

@@ -11,7 +11,7 @@ import {Nav} from "./Nav";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Project from "./Skills/project";
 import ProjectsTab from "./Tabs/ProjectsTab";
-import ReferalTab from "./Tabs/ReferalTab";
+// import ReferalTab from "./Tabs/ReferalTab";
 import HomeTab from "./Tabs/HomeTab";
 import AboutTab from "./Tabs/AboutTab";
 import {ContactTab} from "./Tabs/ContactTab";
@@ -27,7 +27,7 @@ function App() {
           <Route path="/Projects" exact component={ProjectsTab} />
           <Route path="/About" exact component={AboutTab} />
           <Route path="/Contact" exact component={ContactTab} />
-          <Route path="/Referal" exact component={ReferalTab} />
+          {/* <Route path="/Referal" exact component={ReferalTab} /> */}
           <Route path="/" exact component={HomeTab} />
           <br />
           <div className="titles">
