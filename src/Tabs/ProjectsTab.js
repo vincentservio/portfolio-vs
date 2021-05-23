@@ -56,7 +56,7 @@ export default function ProjectsTab() {
           <div>
             <ul class="PrimaryNav with-indicator">
               <li class="Nav-item">
-                <a href="#">Home</a>
+                <a href="https://github.com/vincentservio">Git</a>
               </li>
               <li
                 className={
@@ -85,7 +85,7 @@ export default function ProjectsTab() {
               </li>
 
               <li class="Nav-item">
-                <a href="https://twitter.com/jnowland">Contact</a>
+                <a href="https://vincentservio.medium.com/">Blog</a>
               </li>
             </ul>
 
