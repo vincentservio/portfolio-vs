@@ -33,7 +33,7 @@ export default function ProjectsTab() {
     <div className="projects">
       <center>
         <div className="container">
-          <div className="bloc-tabs">
+          {/* <div className="bloc-tabs">
             <button
               className={toggleState === 1 ? "tabs active-tabs " : "tabs"}
               onClick={() => toggleTab(1)}
@@ -52,11 +52,13 @@ export default function ProjectsTab() {
             >
               {pro[2].title}
             </button>
-          </div>
+          </div> */}
           <div>
             <ul class="PrimaryNav with-indicator">
               <li class="Nav-item">
-                <a href="https://github.com/vincentservio">Git</a>
+                <a href="https://github.com/vincentservio" target="_blank">
+                  Git
+                </a>
               </li>
               <li
                 className={
@@ -85,7 +87,9 @@ export default function ProjectsTab() {
               </li>
 
               <li class="Nav-item">
-                <a href="https://vincentservio.medium.com/">Blog</a>
+                <a href="https://vincentservio.medium.com/" target="_blank">
+                  Blog
+                </a>
               </li>
             </ul>
 
