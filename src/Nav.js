@@ -13,7 +13,6 @@ export const Nav = () => {
         About
       </HashLink>
       <Link to="/Contact">Contact</Link>
-      <Link to="/Referal">Referal</Link>
       <Link to="/Projects">Projects</Link>
     </div>
   );

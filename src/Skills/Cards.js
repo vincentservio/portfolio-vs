@@ -24,7 +24,7 @@ class Cards extends Component {
         <div className="card" style={{fontSize: "2vw"}}>
           <img src={this.props.icon} alt="icon" className="icon" />
           <br />
-          {this.props.skill}
+          <strong>{this.props.skill}</strong>
           <br />
           <div style={{fontSize: "1vw"}}>{this.props.program1}</div>
           <div style={{fontSize: "1vw"}}>{this.props.program2}</div>
