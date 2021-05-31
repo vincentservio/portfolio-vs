@@ -56,7 +56,11 @@ export default function ProjectsTab() {
           <div>
             <ul class="PrimaryNav with-indicator">
               <li class="Nav-item">
-                <a href="https://github.com/vincentservio" target="_blank">
+                <a
+                  style={{fontSize: "1vw"}}
+                  href="https://github.com/vincentservio"
+                  target="_blank"
+                >
                   Git
                 </a>
               </li>
@@ -66,7 +70,7 @@ export default function ProjectsTab() {
                 }
                 onClick={() => toggleTab(1)}
               >
-                <a>FeetLockers</a>
+                <a style={{fontSize: "1vw"}}>FeetLockers</a>
               </li>
               <li
                 className={
@@ -74,7 +78,7 @@ export default function ProjectsTab() {
                 }
                 onClick={() => toggleTab(2)}
               >
-                <a>ChoreKeeper</a>
+                <a style={{fontSize: "1vw"}}>ChoreKeeper</a>
               </li>
 
               <li
@@ -83,11 +87,15 @@ export default function ProjectsTab() {
                 }
                 onClick={() => toggleTab(3)}
               >
-                <a>FeetLockers</a>
+                <a style={{fontSize: "1vw"}}>FeetLockers</a>
               </li>
 
               <li class="Nav-item">
-                <a href="https://vincentservio.medium.com/" target="_blank">
+                <a
+                  style={{fontSize: "1vw"}}
+                  href="https://vincentservio.medium.com/"
+                  target="_blank"
+                >
                   Blog
                 </a>
               </li>

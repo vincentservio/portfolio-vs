@@ -477,13 +477,15 @@ a:hover {
 }
 
 .one {
+  border-radius: 3px;
+
   /* align-self: center; */
   width: 50%;
   /* height: 200px; */
-  background: rgba(0, 0, 0, 0.219);
+  background: rgba(0, 0, 0, 0.76);
   /* float: m; */
   /* margin-left: 20%; */
-  color: #000000;
+  color: #ffffff;
 
   padding-bottom: 5vw;
   padding-top: 5vw;
@@ -495,7 +497,7 @@ a:hover {
   /* margin-left: -10%; */
   padding-top: 5vw;
   width: 80vw;
-  height: 50vw;
+  height: 40vw;
   background: rgba(0, 0, 0, 0.596);
   padding-bottom: 5vw;
 }
@@ -703,9 +705,10 @@ button {
   flex-grow: 1;
 }
 .content {
+  border-radius: 3px;
   background: rgb(255, 255, 255);
-  padding: 20px;
-  width: 90vw;
+  /* padding: 20px; */
+  width: 85vw;
   height: 100%;
   display: none;
 }
