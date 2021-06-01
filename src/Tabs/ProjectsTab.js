@@ -55,22 +55,22 @@ export default function ProjectsTab() {
           </div> */}
           <div>
             <ul class="PrimaryNav with-indicator">
-              <li class="Nav-item">
+              {/* <li class="Nav-item">
                 <a
-                  style={{fontSize: "1vw"}}
+                  style={{fontSize: "2vw"}}
                   href="https://github.com/vincentservio"
                   target="_blank"
                 >
                   Git
                 </a>
-              </li>
+              </li> */}
               <li
                 className={
                   toggleState === 1 ? "Nav-item is-active" : "Nav-item"
                 }
                 onClick={() => toggleTab(1)}
               >
-                <a style={{fontSize: "1vw"}}>FeetLockers</a>
+                <a style={{fontSize: "2vw"}}>TrackBackers</a>
               </li>
               <li
                 className={
@@ -78,7 +78,7 @@ export default function ProjectsTab() {
                 }
                 onClick={() => toggleTab(2)}
               >
-                <a style={{fontSize: "1vw"}}>ChoreKeeper</a>
+                <a style={{fontSize: "2vw"}}>ChoreKeeper</a>
               </li>
 
               <li
@@ -87,18 +87,18 @@ export default function ProjectsTab() {
                 }
                 onClick={() => toggleTab(3)}
               >
-                <a style={{fontSize: "1vw"}}>FeetLockers</a>
+                <a style={{fontSize: "2vw"}}>FeetLockers</a>
               </li>
 
-              <li class="Nav-item">
+              {/* <li class="Nav-item">
                 <a
-                  style={{fontSize: "1vw"}}
+                  style={{fontSize: "2vw"}}
                   href="https://vincentservio.medium.com/"
                   target="_blank"
                 >
                   Blog
                 </a>
-              </li>
+              </li> */}
             </ul>
 
             {project}

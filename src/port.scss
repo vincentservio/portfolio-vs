@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
 
 // How many menu items do we have?
-$menu-items: 5;
+$menu-items: 3;
 
 // Colours
 $background-color: #121212;
@@ -51,8 +51,8 @@ $menu-items-loop-offset: $menu-items - 1; // the number of items in the menu
   a {
     color: $background-color;
     display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-decoration: none;
 
     &:hover {
