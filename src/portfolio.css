@@ -106,10 +106,10 @@ button {
   display: inline-block;
   cursor: pointer;
 
-  /* border-radius: 5px; */
+  border-radius: 5px;
   font-family: "Gill Sans", sans-serif;
   font-weight: bold;
-  box-shadow: 2px 2px;
+  /* box-shadow: 2px 2px; */
 }
 
 .background {
@@ -524,8 +524,8 @@ a:hover {
   }
 }
 
-.projects {
-}
+/* .projects {
+} */
 
 #header {
   position: fixed;
@@ -701,9 +701,9 @@ a:hover {
   background: #c7caee;
 }
 
-button {
+/* button {
   border: none;
-}
+} */
 .content-tabs {
   flex-grow: 1;
 }
