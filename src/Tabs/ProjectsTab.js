@@ -70,7 +70,7 @@ export default function ProjectsTab() {
                 }
                 onClick={() => toggleTab(1)}
               >
-                <a style={{fontSize: "2vw"}}>TrackBackers</a>
+                <a style={{fontSize: "1vw"}}>TrackBackers</a>
               </li>
               <li
                 className={
@@ -78,7 +78,7 @@ export default function ProjectsTab() {
                 }
                 onClick={() => toggleTab(2)}
               >
-                <a style={{fontSize: "2vw"}}>ChoreKeeper</a>
+                <a style={{fontSize: "1vw"}}>ChoreKeeper</a>
               </li>
 
               <li
@@ -87,7 +87,7 @@ export default function ProjectsTab() {
                 }
                 onClick={() => toggleTab(3)}
               >
-                <a style={{fontSize: "2vw"}}>FeetLockers</a>
+                <a style={{fontSize: "1vw"}}>FeetLockers</a>
               </li>
 
               {/* <li class="Nav-item">
